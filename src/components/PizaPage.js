@@ -1,4 +1,6 @@
 export default function PizaPage(props) {
+  console.log(props);
+  if (props.soldOut) return null;
   return (
     <li className="pizza">
       <img src={props.photoName} alt={props.name} />
